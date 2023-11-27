@@ -72,7 +72,7 @@ if __name__ == "__main__":
                         config.cam_settings['Camera.cx'], config.cam_settings['Camera.cy'],
                         config.DistCoef, config.cam_settings['Camera.fps'])
     
-    num_features=2000 
+    num_features=5000
 
     tracker_type = FeatureTrackerTypes.DES_BF      # descriptor-based, brute force matching with knn 
     #tracker_type = FeatureTrackerTypes.DES_FLANN  # descriptor-based, FLANN-based matching 

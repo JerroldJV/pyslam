@@ -1,0 +1,82 @@
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+# Viewer.on: 1 is ON, 0 is OFF
+Viewer.on: 1
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 1
+Viewer.LineSize: 1
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: 0
+Viewer.ViewpointZ: 0
+Viewer.ViewpointF: 500
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+RMS: 1.2239701735979704
+camera matrix:
+ [[228.97376404,   0,         202.65569334],
+ [  0,         216.58014731,115.17756522],
+ [  0,           0,           1,        ]]
+distortion coefficients:  [-0.55896798,  0.01017188,  0.00625153,  0.01100399,  0.87340211]
+
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.fx: 720.74677588
+Camera.fy: 720.87434544
+Camera.cx: 324.72460102
+Camera.cy: 238.97483313
+
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+Camera.k3: 0.0
+
+Camera.width: 426
+Camera.height: 240
+
+# Camera frames per second 
+Camera.fps: 59.94
+
+# IR projector baseline times fx (aprox.)
+Camera.bf: 50.0
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+# Close/Far threshold. Baseline times.
+ThDepth: 50.0
+
+# Deptmap values factor
+DepthMapFactor: 1.0
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1000
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+
+

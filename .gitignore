@@ -1,3 +1,8 @@
+*.bmp
+*.png
+*.mp4
+*.MP4
+
 .*.swp
 .*.swo
 *.pyo 
